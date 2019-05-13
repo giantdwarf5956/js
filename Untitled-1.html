@@ -9,16 +9,30 @@
 
 <body>
   <script>
-    function haha(x,y) {
-      document.write(x+y)
-     document.write('<br/>');
-    }
-    haha(1,2);
-document.write(Math.random())
-document.write(Math.floor(Math.random()*10))
-document.write('<br/>');
+//     function haha(x,y) {
+//       document.write(x+y)
+//      document.write('<br/>');
+//     }
+//     haha(1,2);
+// document.write(Math.random())
+// document.write(Math.floor(Math.random()*10))
+// document.write('<br/>');
     
-   haha((Math.floor(Math.random()*5)), (Math.floor(Math.random()*5)))
+  //  haha((Math.flos'dor(Math.random()*5)), (Math.floor(Math.random()*5)))
+var name1=['小1','小2','小3','小4'];
+var position1 =['点a', '点b','点c'];
+var event1=['事情1',' 事情2' ,'事情3'];
+
+
+function getrandom(array) {
+  var arr=new Array();
+  arr.length=array.length
+  var int=Math.floor(Math.random()*array.length);
+  return int;
+}
+
+document.write(name1[getrandom(name1)]+" 在 "+position1[getrandom(position1)]+" 做 "+event1[getrandom(event1)]);
+
   </script>
 </body>
 </html>
