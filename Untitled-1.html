@@ -30,8 +30,36 @@ function getrandom(array) {
   var int=Math.floor(Math.random()*array.length);
   return int;
 }
-
+function words() {
 document.write(name1[getrandom(name1)]+" 在 "+position1[getrandom(position1)]+" 做 "+event1[getrandom(event1)]);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+var rectangle={
+wide=10,
+long=5,
+size=long*wide,
+
+ bigger: function () {
+  this.rectangle.long+=2;
+  this.rectangle.wide+=2;
+  document.write(this.rectangle.size);
+
+}
+}
+bigger();
+bigger();
+bigger();
 
   </script>
 </body>
