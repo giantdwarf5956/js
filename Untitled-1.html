@@ -46,20 +46,20 @@ document.write(name1[getrandom(name1)]+" 在 "+position1[getrandom(position1)]+"
 
 
 var rectangle={
-wide=10,
-long=5,
-size=long*wide,
+  wide:10,
+  long:5,
 
- bigger: function () {
-  this.rectangle.long+=2;
-  this.rectangle.wide+=2;
-  document.write(this.rectangle.size);
 
+  bigger: function () {
+    this.long = this.long + 2;
+    this.wide = this.wide + 2;
+    document.write(this.long * this.wide );
+
+  }
 }
-}
-bigger();
-bigger();
-bigger();
+rectangle.bigger();
+rectangle.bigger();
+rectangle.bigger();
 
   </script>
 </body>
